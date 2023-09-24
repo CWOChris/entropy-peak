@@ -17,10 +17,13 @@ var randomOne = one[Math.floor(Math.random() * one.length)];
 var randomTwo = two[Math.floor(Math.random() * two.length)];
 
 // Might need to add some kind of function to the top of this for loop
-for (i = 0, i < zero.length; i++) {
-  msg += zero.charAt(randomZero);
+function makePassword() {
+  for (i = 0; i < zero.length; i++){
+    msg += zero.charAt(randomZero);
+
+  }
+  return msg;
 }
-return msg;
 
 
 
