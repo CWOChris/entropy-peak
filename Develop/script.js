@@ -6,11 +6,16 @@ var arabic = "0123456789";
 var specChar = "!@#$%^&*()_+-=";
 
 var zero = lowercase + uppercase + arabic + specChar;
-var two = lowercase + uppercase + arabic;
-var three = lowercase + uppercase;
+var one = lowercase + uppercase + arabic;
+var two = lowercase + uppercase;
 
+var randomZero = zero[Math.floor(Math.random() * zero.length)];
+var randomOne = one[Math.floor(Math.random() * one.length)];
+var randomTwo = two[Math.floor(Math.random() * two.length)];
 
-
+console.log(randomZero);
+console.log(randomOne);
+console.log(randomTwo);
 
 
 
