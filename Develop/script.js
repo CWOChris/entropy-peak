@@ -18,6 +18,9 @@ var highSide = 128;
 var randomZero = zero[Math.floor(Math.random() * zero.length)];
 var randomOne = one[Math.floor(Math.random() * one.length)];
 var randomTwo = two[Math.floor(Math.random() * two.length)];
+// Declare equations to use in for loop for picking characters at random
+var userLength = uL[Math.floor(Math.random() * (highSide - lowSide +1))]
+
 
 // Might need to add some kind of function to the top of this for loop
 function makePassword() {
