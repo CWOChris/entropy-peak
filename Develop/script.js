@@ -19,13 +19,13 @@ var randomZero = zero[Math.floor(Math.random() * zero.length)];
 var randomOne = one[Math.floor(Math.random() * one.length)];
 var randomTwo = two[Math.floor(Math.random() * two.length)];
 // Declare equations to use in for loop for picking characters at random
-var userLength = Math.floor(Math.random() * (highSide - lowSide +1))
+var userLength = Math.floor(Math.random() * (highSide - lowSide +1)) + lowSide;
 // Removed "ul" and brackets in response to console log error
 
 // Added "function" to the top of this for loop to get rid of console log errors
 function makePassword() {
-  for (i = 0; i < length; i++){
-    msg = zero.charAt(randomZero);
+  for (i = 0; i < zero.length; i++){
+    msg += zero.charAt(randomZero);
   }
   return msg;
 }
