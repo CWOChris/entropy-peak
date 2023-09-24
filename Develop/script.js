@@ -10,6 +10,9 @@ var two = lowercase + uppercase;
 // Declare the three combinations of characters I'll use based on user choices
 var msg = '';
 // Declare that msg will be used later to edit DOM to display password generated
+var lowSide = 8;
+var highSide = 128;
+// Declare the minimum and maximum lengths for the generated password
 
 // This was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me these equations
 var randomZero = zero[Math.floor(Math.random() * zero.length)];
@@ -20,7 +23,6 @@ var randomTwo = two[Math.floor(Math.random() * two.length)];
 function makePassword() {
   for (i = 0; i < zero.length; i++){
     msg += zero.charAt(randomZero);
-
   }
   return msg;
 }
@@ -35,7 +37,7 @@ function makePassword() {
 console.log(randomZero);
 console.log(randomOne);
 console.log(randomTwo);
-
+console.log(msg);
 
 
 // AS AN employee with access to sensitive data
