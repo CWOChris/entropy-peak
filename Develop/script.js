@@ -38,11 +38,11 @@ function makePassword() {
 
 
 
-
+console.log(userLength);  // This definitely spits out a random number between 8 and 128, not useful yet
 console.log(randomZero);
 console.log(randomOne);
 console.log(randomTwo);
-console.log(msg);
+console.log(makePassword);
 
 
 // AS AN employee with access to sensitive data
