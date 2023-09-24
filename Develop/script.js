@@ -25,25 +25,25 @@ var userLength = Math.floor(Math.random() * (highSide - lowSide +1))
 // Added "function" to the top of this for loop to get rid of console log errors
 function makePassword() {
   for (i = 0; i < length; i++){
-    msg += zero.charAt(randomZero);
-    console.log(msg);
+    msg = zero.charAt(randomZero);
   }
   return msg;
 }
 // The above for loop should run to randomly spit out characters
+var finalPassword = makePassword(userLength);
 
 
 
+console.log(msg);
 
 
 
-
-console.log(userLength);  // This definitely spits out a random number between 8 and 128, not useful yet
 console.log(randomZero);
 console.log(randomOne);
 console.log(randomTwo);
 console.log(makePassword);
-
+console.log(finalPassword);
+console.log(userLength);  // This definitely spits out a random number between 8 and 128, not useful yet
 
 // AS AN employee with access to sensitive data
 // I WANT to randomly generate a password that meets certain criteria
