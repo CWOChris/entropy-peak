@@ -15,7 +15,7 @@ var highSide = 128;
 // Declare the minimum and maximum lengths for the generated password
 
 // This was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me these equations
-var randomZero = zero[Math.floor(Math.random() * zero.length)];
+var randomZero = Math.floor(Math.random() * zero.length);
 var randomOne = one[Math.floor(Math.random() * one.length)];
 var randomTwo = two[Math.floor(Math.random() * two.length)];
 // Declare equations to use in for loop for picking characters at random
@@ -25,14 +25,14 @@ var userLength = Math.floor(Math.random() * (highSide - lowSide +1)) + lowSide;
 // Added "function" to the top of this for loop to get rid of console log errors
 function makePassword(userLength) {
   for (i = 0; i <= userLength; i++){
-    msg += randomZero.charAt(zero);
+    msg += zero.charAt(randomZero);
   }
   return msg;
 }
 // The above for loop should run to randomly spit out characters
 var finalPassword = makePassword(userLength);
 
-
+console.log(i);
 
 console.log(msg);
 
