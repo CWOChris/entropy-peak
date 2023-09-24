@@ -1,6 +1,6 @@
 // Assignment code here
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
-var uppercase = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var arabic = "0123456789";
 var specChar = "!@#$%^&*()_+-=";
 // Declare all the characters specified in the acceptance criteria
@@ -23,9 +23,9 @@ var userLength = Math.floor(Math.random() * (highSide - lowSide +1)) + lowSide;
 // Removed "ul" and brackets in response to console log error
 
 // Added "function" to the top of this for loop to get rid of console log errors
-function makePassword() {
-  for (i = 0; i < zero.length; i++){
-    msg += zero.charAt(randomZero);
+function makePassword(userLength) {
+  for (i = 0; i <= userLength; i++){
+    msg += randomZero.charAt(zero);
   }
   return msg;
 }
