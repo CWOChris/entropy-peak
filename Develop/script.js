@@ -42,6 +42,8 @@ console.log("Stong: " + finalBest);
 console.log("Middle: " + finalBetter);
 console.log("Stong: " + finalGood);
 
+document.getElementById('password').innerHTML = finalBest  //Got the password to display in the textarea"
+
 
 
 
