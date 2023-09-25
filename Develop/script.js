@@ -1,20 +1,45 @@
 // Assignment code here
-var lowercase = "abcdefghijklmnopqrstuvwxyz";
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var arabic = "0123456789";
-var specChar = "!@#$%^&*()_+-=";
-// Declare all the characters specified in the acceptance criteria
-var zero = lowercase + uppercase + arabic + specChar;
-var one = lowercase + uppercase + arabic;
-var two = lowercase + uppercase;
-// Declare the three combinations of characters I'll use based on user choices
 
-// This was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me these equations
+function createBest(length) {
+  var zero = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()_+-=';
+  var msg = '';
+  for (i = 0; i < length; i++) {  // This for loop was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
+    var randoChars = Math.floor(Math.random() * zero.length);
+    msg += zero.charAt(randoChars);
+  }
+  return msg;
+}
+
+var pwdLength = 12; //Need to get to repsond to user requested length between 8-128
+
+var finalBest = createBest(pwdLength);
+
+function createBetter(length) {
+  var zero = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  var msg = '';
+  for (i = 0; i < length; i++) {  // This for loop was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
+    var randoChars = Math.floor(Math.random() * zero.length);
+    msg += zero.charAt(randoChars);
+  }
+  return msg;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+console.log("Stong: " + finalBest);
+console.log("Stong: " + finalBetter);
+console.log("Stong: " + finalGood);
 
 
 
