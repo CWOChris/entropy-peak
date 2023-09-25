@@ -1,44 +1,45 @@
 // Assignment code here
+var pwdLength = 12; //Need to get to repsond to user requested length between 8-128
 
 function createBest(length) {
   var zero = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()_+-=';
   var msg = '';
-  for (i = 0; i < length; i++) {  // This for loop was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
+  for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
     var randoChars = Math.floor(Math.random() * zero.length);
     msg += zero.charAt(randoChars);
   }
   return msg;
 }
-
-var pwdLength = 12; //Need to get to repsond to user requested length between 8-128
 
 var finalBest = createBest(pwdLength);
 
 function createBetter(length) {
-  var zero = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  var one = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   var msg = '';
-  for (i = 0; i < length; i++) {  // This for loop was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
-    var randoChars = Math.floor(Math.random() * zero.length);
-    msg += zero.charAt(randoChars);
+  for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
+    var randoChars = Math.floor(Math.random() * one.length);
+    msg += one.charAt(randoChars);
   }
   return msg;
 }
 
+var finalBetter = createBetter(pwdLength);
 
+function createGood(length) {
+  var two = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var msg = '';
+  for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
+    var randoChars = Math.floor(Math.random() * two.length);
+    msg += two.charAt(randoChars);
+  }
+  return msg;
+}
 
-
-
-
-
-
-
-
-
-
+var finalGood = createGood(pwdLength);
 
 
 console.log("Stong: " + finalBest);
-console.log("Stong: " + finalBetter);
+console.log("Middle: " + finalBetter);
 console.log("Stong: " + finalGood);
 
 
