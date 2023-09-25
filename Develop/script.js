@@ -15,36 +15,29 @@ var highSide = 128;
 // Declare the minimum and maximum lengths for the generated password
 
 // This was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me these equations
-var randomZero = Math.floor(Math.random() * zero.length);
+var randomZero = zero[Math.floor(Math.random() * zero.length)];
 var randomOne = one[Math.floor(Math.random() * one.length)];
 var randomTwo = two[Math.floor(Math.random() * two.length)];
 // Declare equations to use in for loop for picking characters at random
 var userLength = Math.floor(Math.random() * (highSide - lowSide +1)) + lowSide;
-// Removed "ul" and brackets in response to console log error
-function randomCharPicker(characters) {
-  return characters.charAt(randomZero)
-}
-// Added "function" to the top of this for loop to get rid of console log errors
-function makePassword(userLength) {
-  for (i = 0; i <= userLength; i++){
-    msg += zero.charAt(randomZero);
-  }
-  return msg;
-}
-// The above for loop should run to randomly spit out characters
-var finalPassword = makePassword(userLength);
 
-console.log("this is what i is:" + i)
-console.log(i);
+function randomCharPicker(characters) {{
+  msg += characters.charAt(randomZero);
+}
+return msg;
+}
+
+
+console.log(randomCharPicker)
+
+
 console.log("this is what msg is:" + msg)
-console.log(msg);
-console.log("this is what randomCharPicker is:" + randomCharPicker)
+
 
 
 console.log("this is what randomZero is:" + randomZero);
 console.log("this is what randomOne is:" + randomOne);
 console.log("this is what randomTwo is:" + randomTwo);
-console.log("this is what makePassword is:" + makePassword);
 console.log("this is what finalPassword is:" + finalPassword);
 console.log("this is what userLength is:" + userLength);  // This definitely spits out a random number between 8 and 128, not useful yet
 
