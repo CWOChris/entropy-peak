@@ -54,7 +54,7 @@ console.log("Weak: " + finalGood);
 
 document.getElementById('password').innerHTML = finalBest  //Got the password to display in the "textarea", console log in browser shows other password types
 
-
+// I used stackoverflow for pointers, screenshots from in class, plus notes I took from Jon Duckett's "Javascript and jQuery" to accomplish this code.
 
 
 
