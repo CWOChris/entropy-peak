@@ -17,10 +17,10 @@ function createBetter(length) {
   var one = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   var msg = '';
   for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
-    var randoChars = Math.floor(Math.random() * one.length);
-    msg += one.charAt(randoChars);
+    var randoChars = Math.floor(Math.random() * one.length);  //Math used to give me random characters
+    msg += one.charAt(randoChars);  // Using my alphabet I declared as one, characters are selected at random in conjuction with my randoChars math.
   }
-  return msg;
+  return msg;  //spits out the character it selected
 }
 
 var finalBetter = createBetter(pwdLength);
