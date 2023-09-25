@@ -1,7 +1,8 @@
 // Assignment code here
-var pwdLength = 12; //Need to get to repsond to user requested length between 8-128
+var pwdLength = parseInt(prompt("Choose a length between 8-128 characters:")); //Charlie Puente TA helped with this variable
 
 function createBest(length) {
+  if (length >= 8 && length <= 128) { //Charlie Puente TA helped with this if statement
   var zero = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()_+-=';
   var msg = '';
   for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
@@ -10,10 +11,12 @@ function createBest(length) {
   }
   return msg;
 }
+}
 
 var finalBest = createBest(pwdLength);
 
 function createBetter(length) {
+  if (length >= 8 && length <= 128) {
   var one = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   var msg = '';
   for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
@@ -22,10 +25,12 @@ function createBetter(length) {
   }
   return msg;  //spits out the character it selected
 }
+}
 
 var finalBetter = createBetter(pwdLength);
 
 function createGood(length) {
+  if (length >= 8 && length <= 128) {
   var two = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var msg = '';
   for (i = 0; i < length; i++) {  // This for loop and the randoChars declaration was not provided directly for this purpose, but Tutor Andrew Hardemon helped with showing me how to write it
@@ -34,6 +39,11 @@ function createGood(length) {
   }
   return msg;
 }
+}
+
+// I could use a confirm prompt here according to Charlie Puente TA.  It would accomplish the bare minimum to acheive grading standards but,
+// personally, I want to wait until I have a better understanding of forms, APIs and DOM manipulation, in order to make it look pretty and
+// not rely on browser prompts that aren't very intuitive to the user.
 
 var finalGood = createGood(pwdLength);
 
