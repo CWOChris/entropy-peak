@@ -50,9 +50,9 @@ var finalGood = createGood(pwdLength);
 
 console.log("Stong: " + finalBest);
 console.log("Middle: " + finalBetter);
-console.log("Stong: " + finalGood);
+console.log("Weak: " + finalGood);
 
-document.getElementById('password').innerHTML = finalBest  //Got the password to display in the textarea"
+document.getElementById('password').innerHTML = finalBest  //Got the password to display in the "textarea", console log in browser shows other password types
 
 
 

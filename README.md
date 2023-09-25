@@ -1,6 +1,6 @@
 # Password Generator Starter Code
 
-Live deployed URL: https://CWOChris.github.io/entropy-peak
+Live deployed URL: https://CWOChris.github.io/entropy-peak/Develop/index.html
 
 
 
